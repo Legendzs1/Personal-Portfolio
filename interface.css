@@ -1,0 +1,157 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+html {
+  background-color: #2a2a2a;
+  margn: 0 1 auto;
+}
+h1 {
+  color: white;
+}
+p {
+  color: #cacaca;
+}
+a {
+  text-decoration: none;
+}
+
+/*Nav CSS */
+
+#navbar {
+  font-size: 18px;
+  background-color: #f3f3f3;
+  border: 1px solid rgba(0,0,0,0.2);
+  padding-bottom: 5px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.main-nav {
+  list-style-type: none;
+    display: none;
+}
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+  border-bottom: 1px #444 solid;
+
+}
+.nav-item,
+.logo {
+  text-decoration: none;
+  color: black;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+  white-space: nowrap;
+
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right:20px;
+  cursor: pointer;
+  color: black;
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+
+/* Style for cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1 0 500px;
+  box-sizing: border-box;
+  margin: 1rem .25em;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  text-align: center;
+  border-radius: 5px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.codepen {
+  border-radius: 5px 5px 0 0;
+}
+
+/* Media querys */
+/* mobile */
+@media screen and (min-width: 640px){
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card {
+    max-width: calc(50% -  1em);
+  }
+}
+/*For mid range screens */
+@media screen and (min-width: 960px) {
+  .cards {
+
+  }
+  .card {
+    max-width: calc(25% - 1em)
+  }
+}
+@media screen and (min-width: 900px) {
+  .navbar {
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+}
+
+.main-nav {
+  display: flex;
+  margin-right: 30px;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.main-nav li {
+  margin: 0;
+}
+
+.nav-item {
+  margin-left: 40px;
+}
+
+.logo {
+  margin-top: 0;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.logo:hover,
+.nav-item:hover {
+  color: rgba(255, 255, 255, 1);
+}
